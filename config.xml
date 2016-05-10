@@ -23,14 +23,12 @@ value="org.apache.cordova.device.Device"
 <!-- Core/Common Preferences -->
 
 
-<preference name="Fullscreen" value="true"/> 
+<preference name="fullscreen" value="true"/> 
 
 <preference name="DisallowOverscroll" value="true"/> 
 
-<preference name="Orientation" value="landscape"/>
+<preference name="orientation" value="landscape"/>
 
 <preference name="HideKeyboardFormAccessoryBar" value="false"/>
-
-<preference name="BackgroundColor" value="0xff0000ff"/>
 
 </widget>
