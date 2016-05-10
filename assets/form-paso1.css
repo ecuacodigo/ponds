@@ -81,7 +81,7 @@ html{
 .form-basic textarea{
     color:  #5f5f5f;
     box-sizing: border-box;
-    width: 500px;
+    width: 250px;
     height: 150px;
     box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
     font: normal 13px sans-serif;
@@ -166,15 +166,15 @@ html{
 }
 
 #vistaprevia {
-    width: 430px; 
-    height: 242px;
+    width: 301px; 
+    height: 169px;
     margin-top: 20px; 
     margin-left: 35%;     
 }
 #vistaprevia.rotate90,
 #vistaprevia.rotate270 {
-    width: 430px; 
-    height: 242px;
+    width: 301px; 
+    height: 169px;
 }
 #show-picture {
   transform-origin: top left;
@@ -188,27 +188,27 @@ html{
   transform: rotate(0deg) translateY(-100%, -100%);
   -webkit-transform: rotate(0deg) translateY(-100%, -100%);
   -ms-transform: rotate(0deg) translateY(-100%, -100%);
-    width: 242px;
-    height: 430px;   
+    width: 169px;
+    height: 301px;   
 }
 #vistaprevia.rotate90 #show-picture {
   transform: rotate(90deg) translateY(-100%);
   -webkit-transform: rotate(90deg) translateY(-100%);
   -ms-transform: rotate(90deg) translateY(-100%);
-    width: 430px; 
-    height: 242px;  
+    width: 301px; 
+    height: 169px;  
 }
 #vistaprevia.rotate180 #show-picture {
   transform: rotate(180deg) translate(-100%, -100%);
   -webkit-transform: rotate(180deg) translate(-100%, -100%);
   -ms-transform: rotate(180deg) translateX(-100%, -100%);
-    width: 242px;
-    height: 430px;   
+    width: 169px;
+    height: 301px;   
 }
 #vistaprevia.rotate270 #show-picture {
   transform: rotate(270deg) translateX(-100%);
   -webkit-transform: rotate(270deg) translateX(-100%);
   -ms-transform: rotate(270deg) translateX(-100%);
-    width: 430px; 
-    height: 242px;  
+    width: 301px; 
+    height: 169px;  
 }

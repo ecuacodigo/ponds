@@ -17,7 +17,8 @@
     <script language="JavaScript" type="text/javascript" src="assets/js/lobibox.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/component.css" />
     <link rel="stylesheet" href="assets/css/Lobibox.min.css"/>
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>    
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>   
+
     <base target="content-frame"> 
     
     <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script> 
@@ -31,8 +32,29 @@
             iconSource: 'fontAwesome'
         });    
         
+        
+      function doOnOrientationChange()
+      {
+        switch(window.orientation) 
+        {  
+          case -90:
+          case 90:
+            alert('landscape');
+            break; 
+          default:
+            alert('portrait');
+            break; 
+        }
+      }
+    
+      window.addEventListener('orientationchange', doOnOrientationChange);
+    
+      // Initial execution if needed
+      doOnOrientationChange();
+
+        
         //alert ("window.innerHeight :" + window.innerHeight + "     window.innerWidth :"+window.innerWidth);
-        if(window.innerHeight > window.innerWidth)
+        /*if(window.innerHeight > window.innerWidth)
         {
             alert ("Por favor gira y usa la Tableta en forma Horizontal");
         }
@@ -52,6 +74,7 @@
                 }
           }
         }
+        */
     
     </script>
 
@@ -59,7 +82,7 @@
 
 
 	<header>
-		<img id="imagen_background" src="assets/images/background_01.jpg" class="img-responsive" width="1280" height="420"> 
+		<img id="imagen_background" src="assets/images/background_01.jpg" class="img-responsive" width="1280" height="300"> 
     </header>
     
     <!-- esto es para saber el tiempo en la pagina  -->
@@ -94,25 +117,24 @@
                     <div class="form-row">
                         <label>
                             <span>Nombres</span>
-                            <input type="text" id="form_nombres" name="form_nombres" onkeypress="solo_letras()"  maxlength="12" style="width: 500px;" autocomplete="off">
+                            <input type="text" id="form_nombres" name="form_nombres" onkeypress="solo_letras()"  maxlength="12" style="width: 250px;" autocomplete="off">
                         </label>
                     </div>
         
                     <div class="form-row">
                         <label>
                             <span>Apellidos</span>
-                            <input type="text" id="form_apellidos" name="form_apellidos" onkeypress="solo_letras()" maxlength="12" style="width: 500px;" autocomplete="off">
+                            <input type="text" id="form_apellidos" name="form_apellidos" onkeypress="solo_letras()" maxlength="12" style="width: 250px;" autocomplete="off">
                         </label>
                     </div>
         
                     <div class="form-row">
                         <label>
                             <span>Tel&eacute;fono</span>
-                            <input type="text" id="form_telefono" name="form_telefono" onkeypress="solo_numeros()" maxlength="10" autocomplete="off">
+                            <input type="text" id="form_telefono" name="form_telefono" onkeypress="solo_numeros()" maxlength="10" style="width: 250px;" autocomplete="off">
                         </label>
                     </div>
-                    
-                    <br />
+
                 </form>
                 
         </div> <!-- FIN paso1 -->    
@@ -131,7 +153,7 @@
                             <textarea name="form_como_te_defines" id="form_como_te_defines" maxlength="32" onkeypress="solo_letras_respuesta()" autocomplete="off" >Soy </textarea>
                         </label>
                     </div>
-                    <br /><br /><br />
+                    <br />
         
                 </form>        
 
@@ -145,7 +167,7 @@
         <div id="paso_2"  style="display:none">
 
             
-                    <div id="vistaprevia" class="rotate90" style="margin-top: -230px; margin-left: 20%;">
+                    <div id="vistaprevia" class="rotate90" style="margin-top: -130px; margin-left: 20%;">
                         <img alt="" src="assets/images/foto_ejemplo.jpg" id="show-picture">
                     </div>
 
@@ -161,17 +183,9 @@
                     </form>                              
                             
                     <div id="bt_seguir" class="seguir">
-                        <img src="assets/images/fin.png" class="img-responsive" id="bt_siguiente_paso2" style=" margin-top: -8px; margin-left: 0%;">
+                        <img src="assets/images/fin.png" class="img-responsive" id="bt_siguiente_paso2" style=" margin-top: -48px; margin-left: 0%;">
                     </div>
                     
-                <form method="post" action="#" id="form_ponds_paso2" name="form_ponds_paso2">
-                    <div class="form-row">
-                        <label> &nbsp;
-                        </label>
-                    </div>
-   
-        
-                </form> 
 
                 <div id="bt_regresar">
                     <img src="assets/images/regresar.png" class="img-responsive" id="bt_regresar2" style=" margin-top: -52px; margin-left: 1%;">
