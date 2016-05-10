@@ -31,6 +31,11 @@ value="org.apache.cordova.device.Device"
 
 <preference name="HideKeyboardFormAccessoryBar" value="false"/>
 
-<plugin name="Camera" value="org.apache.cordova.CameraLauncher" />
+<feature name="Camera">
+    <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+</feature>
+
+<feature name="http://tizen.org/api/application" required="true"/>
+<feature name="http://tizen.org/api/application.launch" required="true"/>
 
 </widget>
