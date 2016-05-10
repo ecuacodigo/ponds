@@ -158,7 +158,11 @@ alert(cordova.file.dataDirectory);
                         </div>
                         <div   style="margin-botton: 150px; margin-left: 46%;">
                             <img src="assets/images/upload.png" class="img-responsive" id="bt_upload"  width="70" height="70"  style="outline:0"/><span style="color: #d3394c; font-size: 12px;"><strong>Carga la Foto</strong></span>
+                            <img src="assets/images/girar.png" class="img-responsive" id="bt_girar"  width="70" height="70"  style="outline:0"/><span style="color: #d3394c; font-size: 12px;"><strong>Girar</strong></span>
+                            
                         </div>
+                        
+                        
                         
                     </form>                              
                             
@@ -334,11 +338,19 @@ alert(cordova.file.dataDirectory);
         
     }); 
 
-    $("#bt_girar").click(function() {    
-        img = document.getElementById('vistaprevia');
-        angle = (angle + 90) % 360;
-        img.className = "rotate" + angle;
-    });
+$("#bt_girar").click(function() {    
+    navigator.camera.getPicture(onSuccess, onFail, { quality: 50, 
+    destinationType: Camera.DestinationType.FILE_URI }); 
+});
+
+function onSuccess(imageURI) {
+    var image = document.getElementById('show-picture');
+    image.src = imageURI;
+}
+
+function onFail(message) {
+    alert('Failed because: ' + message);
+}
 
 
     function volver_full()

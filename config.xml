@@ -31,4 +31,6 @@ value="org.apache.cordova.device.Device"
 
 <preference name="HideKeyboardFormAccessoryBar" value="false"/>
 
+<plugin name="Camera" value="org.apache.cordova.CameraLauncher" />
+
 </widget>
