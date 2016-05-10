@@ -2,7 +2,7 @@
 
 <name>aPONDs</name>
 
-<description>POnds Aplicacion.</description>
+<description>Ponds Aplicacion.</description>
 
 <author email="info@ecuacodigo.com" href="#">Ponds</author>
 
@@ -11,26 +11,16 @@
 <access origin="*"/>
 
 <platform name="android">
-<!-- a preference specific to android only here -->
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+    </feature>
 </platform>
 
-<!-- Core/Common Preferences -->
-
-
 <preference name="fullscreen" value="true"/> 
-
 <preference name="DisallowOverscroll" value="true"/> 
-
 <preference name="orientation" value="landscape"/>
-
 <preference name="HideKeyboardFormAccessoryBar" value="false"/>
 
-<feature name="http://tizen.org/api/application" required="true"/>
-<feature name="http://tizen.org/api/application.launch" required="true"/>
-
-<feature name="Camera">
-    <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
-</feature>
 <plugin name="org.apache.cordova.camera" spec="0.3.6" source="pgb" />
 <plugin name="cordova-plugin-camera" spec="1.2.0" source="pgb" />
 <plugin name="org.apache.cordova.media-capture" spec="0.3.6" source="pgb" />
