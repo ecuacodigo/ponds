@@ -28,7 +28,7 @@
 <feature name="http://tizen.org/api/application" required="true"/>
 <feature name="http://tizen.org/api/application.launch" required="true"/>
 
-<plugin name="Camera" value="org.apache.cordova.CameraLauncher" />
+<plugin name="Camera" value="org.apache.cordova.camera.CameraLauncher" />
 <plugin name="org.apache.cordova.camera" spec="0.3.6" source="pgb" />
 <plugin name="cordova-plugin-camera" spec="1.2.0" source="pgb" />
 <plugin name="org.apache.cordova.media-capture" spec="0.3.6" source="pgb" />
