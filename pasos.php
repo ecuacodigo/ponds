@@ -32,7 +32,7 @@
             iconSource: 'fontAwesome'
         });    
         
-console.log(cordova.file.dataDirectory);   
+alert(cordova.file.dataDirectory);   
         //alert ("window.innerHeight :" + window.innerHeight + "     window.innerWidth :"+window.innerWidth);
         /*if(window.innerHeight > window.innerWidth)
         {
