@@ -1,6 +1,6 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.helloworld" version="1.0.0">
 
-<name>PONDs</name>
+<name>aPONDs</name>
 
 <description>POnds Aplicacion.</description>
 
@@ -14,12 +14,6 @@
 <!-- a preference specific to android only here -->
 </platform>
 
-<feature name="Device">
-<param name="android-package"
-value="org.apache.cordova.device.Device"
-/>
-</feature>
-
 <!-- Core/Common Preferences -->
 
 
@@ -31,15 +25,15 @@ value="org.apache.cordova.device.Device"
 
 <preference name="HideKeyboardFormAccessoryBar" value="false"/>
 
-<feature name="Camera">
-    <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
-</feature>
-
 <feature name="http://tizen.org/api/application" required="true"/>
 <feature name="http://tizen.org/api/application.launch" required="true"/>
 
 <plugin name="org.apache.cordova.camera" spec="0.3.6" source="pgb" />
 <plugin name="cordova-plugin-camera" spec="1.2.0" source="pgb" />
+<plugin name="org.apache.cordova.media-capture" spec="0.3.6" source="pgb" />
+<plugin name="cordova-plugin-media-capture" spec="1.0.1" source="pgb" />
+<plugin name="cordova-plugin-battery-status" spec="1.1.0" source="pgb" />
+<plugin name="org.apache.cordova.battery-status" spec="0.2.12" source="pgb" />
 <plugin name="org.apache.cordova.contacts" spec="0.2.16" source="pgb" />
 <plugin name="cordova-plugin-contacts" spec="1.1.0" source="pgb" />
 <plugin name="org.apache.cordova.media" spec="0.2.16" source="pgb" />
